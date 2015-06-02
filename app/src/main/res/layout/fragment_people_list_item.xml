@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_marginLeft="6px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@id/firstName"
+        android:textColor="#000" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/proText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="go to profile view"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:gravity="right"-->
+        <!--android:layout_alignBottom-->
+        <!--android:textSize="10dp"-->
+        <!--android:textColor="#11f0e5"-->
+        <!--android:layout_toRightOf="@id/lastName"/>-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layout_item"
+        android:background="#fff" />
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@color/list_item_bg"-->
+<!--android:descendantFocusability="blocksDescendants" >-->
+
+<!--<RelativeLayout-->
+    <!--android:id="@+id/layout_item"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content" >-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_emp_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="6dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_emp_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@+id/txt_emp_id"-->
+        <!--android:padding="6dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_emp_dob"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/txt_emp_name"-->
+        <!--android:padding="6dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_emp_salary"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/txt_emp_dob"-->
+        <!--android:padding="6dp" />-->
+<!--</RelativeLayout>-->
+
+<!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_below="@+id/layout_item"-->
+    <!--android:background="@color/view_divider_color" />-->
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_view"
+    android:background="#11f0e5">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/contact_img_holder"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="First Name:"
+        android:id="@+id/firstText"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignTop="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileFirst"
+        android:layout_below="@+id/firstText"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Birthday:"
+        android:id="@+id/birthdayText"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/profileBirthday"
+        android:layout_alignBottom="@+id/birthdayText"
+        android:layout_toRightOf="@+id/birthdayText"
+        android:layout_toEndOf="@+id/birthdayText"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updateButton"
+        android:layout_below="@+id/sexText"
+        android:layout_alignLeft="@+id/sexText"
+        android:layout_alignStart="@+id/sexText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deleteButton"
+        android:layout_below="@+id/sexText"
+        android:layout_toRightOf="@+id/updateButton"
+        android:layout_toEndOf="@+id/updateButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/profileLast"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/lastText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Last Name:"
+        android:id="@+id/lastText"
+        android:layout_below="@+id/profileFirst"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sex:"
+        android:id="@+id/sexText"
+        android:layout_below="@+id/birthdayText"
+        android:layout_alignLeft="@+id/birthdayText"
+        android:layout_alignStart="@+id/birthdayText"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/profileSex"
+        android:layout_below="@+id/birthdayText"
+        android:layout_toRightOf="@+id/sexText"
+        android:layout_toEndOf="@+id/sexText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gift List"
+        android:id="@+id/listButton"
+        android:onClick="onClick"
+        android:layout_below="@+id/deleteButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/lastText"
+        android:layout_toRightOf="@+id/lastText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:id="@+id/photoButton"
+        android:layout_below="@+id/listButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:onClick="onSnap"
+        android:layout_toEndOf="@+id/lastText"
+        android:layout_toRightOf="@+id/lastText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ideas"
+        android:id="@+id/suggestions"
+        android:layout_below="@+id/photoButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/lastText"
+        android:layout_toEndOf="@+id/lastText"
+        android:onClick="onIdea" />
+
+</RelativeLayout>

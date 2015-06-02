@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GiftPal</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="red_string">Red</string>
+    <string name="blue_string">Blue</string>
+    <string name="yellow_string">Yellow</string>
+
+    <string name="demo_external_activity">View Images from Device</string>
+    <string name="profiles_link">Go To Profile</string>
+    <string name="profiles">Profiles</string>
+
+</resources>
